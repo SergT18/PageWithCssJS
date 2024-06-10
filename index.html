@@ -1,0 +1,58 @@
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="notify.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="/reg" method="POST" id="regForm">
+  <lable id="title">Регистрация нового пользователя</lable>
+  <table>
+    <tboby>
+      <tr>
+        <td class="lbl">Имя:</td>
+        <td><input type="text" name="name" id="name" class="textbox"/>
+      </tr>
+      <tr>
+        <td></td>
+        <td><lable class="help">максимум 25 символов</lable></td>
+      </tr>
+      <tr>
+        <td class="lbl">E-mail:</td>
+        <td><input type="text" name="mail" id="mail" class="textbox"/>
+      </tr>
+      <tr>
+        <td></td>
+        <td><lable class="help">только @test.ru</lable></td>
+      </tr>
+      <tr>
+        <td class="lbl">Пароль:</td>
+        <td><input type="password" name="password1" id="password1" class="textbox"/>
+      </tr>
+      <tr>
+        <td></td>
+        <td><lable class="help">от 5 до 10 символов</lable></td>
+      </tr>
+      <tr>
+        <td class="lbl">Подтвердить:</td>
+        <td><input type="password" name="password2" id="password2" class="textbox"/>
+      </tr>
+      <tr>
+        <td></td>
+        <td><lable class="help">должен совпадать с паролем</lable></td>
+      </tr>
+      <tr>
+        <td class="lbl">Информация:</td>
+        <td><textarea maxlength="250" name="info" id="info" class="textbox"></textarea>
+      </tr>
+      <tr>
+        <td></td>
+        <td><lable class="help">в свободной форме, максисум 250 символов</lable></td>
+      </tr>
+    </tbody>
+  </table>
+  <input type="button" id="send" value="Отправить заявку"/>
+</form>
+  <script src="scrypt.js"></script>
+</body>
